@@ -28,6 +28,10 @@ One-time **$19** on Lemon Squeezy. Mirror on Gumroad. Do not subscribe; Forge Pa
 
 MIT. workinwithai-create.
 
+## Milestone 2026-10-12
+
+Implemented production WAV export using OfflineAudioContext. Length is exactly Math.round(bars * 4 * 60 / bpm * 48000) samples at 48 kHz. First downbeat at sample 0. Peak limited to ≤ -1 dBFS. Filename walkbass-<recipe>-<bpm>bpm-<key>.wav. MIDI export stub remains; full multi-track SMF is the next milestone. Live deployment pending GitHub-Vercel integration link.
+
 ## Acceptance
 
 (1) Export length exact for bars × 4 × 60 / bpm × 48000. (2) Loop seamless. (3) Background tab stops cleanly. (4) Live changes apply next step. (5) Missing samples named. (6) Sustains hold. (7) No @main, no Math.random in export.
