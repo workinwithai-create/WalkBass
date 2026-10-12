@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WalkBass — walking bass desk</title>
+  <meta name="description" content="Four live upright bars that walk the loop stuck on roots." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<main>
+  <p class="eyebrow">WorkinWithAI · live chairs</p>
+  <h1>WalkBass</h1>
+  <p class="lead">Walking bass desk. Generators and loop DAWs sit the upright on the root. Session players walk it. Live FluidR3 upright, piano, nylon, kit, trumpet, violin.</p>
+  <p class="status" id="status">Seating chairs…</p>
+  <p class="tap" id="tap">Tap to start audio</p>
+  <div class="controls">
+    <label>BPM <input type="number" id="bpm" min="60" max="180" value="100" /></label>
+    <label>Key <select id="key"><option>C</option><option>A minor</option><option>G</option><option>E minor</option><option>F</option></select></label>
+    <label>Bars <input type="number" id="bars" min="4" max="16" value="8" /></label>
+  </div>
+  <p class="eyebrow">Groove</p>
+  <div class="row" id="grooves"></div>
+  <p class="eyebrow">Walk</p>
+  <div class="row" id="recipes"></div>
+  <p class="eyebrow">Form · loop 1–4 · walk 5–8</p>
+  <div class="bars" id="bars"></div>
+  <h2>Punch list</h2>
+  <pre id="punch"></pre>
+  <div class="exports">
+    <button id="exportWav">Export WAV</button>
+    <button id="exportMid">Export MIDI</button>
+  </div>
+</main>
+<div class="dock">
+  <button id="playA">A · Roots</button>
+  <button id="playB">B · Walk</button>
+  <button id="play8">8 · Walk only</button>
+  <button class="ghost" id="stop">Stop</button>
+  <button class="ghost" id="copy">Copy punch</button>
+</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>

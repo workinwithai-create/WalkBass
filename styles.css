@@ -1,0 +1,20 @@
+body { font-family: system-ui, sans-serif; background: #111; color: #eee; margin: 0; padding: 1rem; }
+main { max-width: 800px; margin: 0 auto; }
+.eyebrow { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: #888; }
+h1 { margin: 0.2rem 0; }
+.lead { color: #aaa; }
+.status, .tap { padding: 0.5rem; background: #222; border-radius: 4px; }
+.tap { display: none; cursor: pointer; }
+.controls { display: flex; gap: 1rem; margin: 1rem 0; }
+.row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.card { background: #222; border: 1px solid #333; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; text-align: left; color: inherit; }
+.card.on { border-color: #4af; background: #1a2; }
+.bars { display: flex; gap: 0.25rem; margin: 1rem 0; flex-wrap: wrap; }
+.bar { width: 60px; height: 60px; background: #222; border: 1px solid #333; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 0.7rem; }
+.bar.active { border-color: #4af; background: #1a2; }
+.bar.tag { background: #2a1; }
+.dock { position: sticky; bottom: 0; background: #111; padding: 1rem 0; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+button { background: #333; color: #eee; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+button.ghost { background: transparent; border: 1px solid #555; }
+pre { background: #222; padding: 1rem; overflow: auto; white-space: pre-wrap; }
+.exports { margin: 1rem 0; }
